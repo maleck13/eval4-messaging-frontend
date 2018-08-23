@@ -138,7 +138,8 @@ app.post('/api/send-request', (req, resp) => {
       uppercase: req.body.uppercase,
       reverse: req.body.reverse
     },
-    body: JSON.stringify({type:req.body.text, stock: req.body.stock})
+        body: JSON.stringify({type: 'Dr. Evals ' + req.body.text, stock: req.body.stock})
+
   };
 
   requestMessages.push(message);
